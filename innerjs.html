@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <h1>Movie Details</h1>
+    <div id="movie"></div>
+     <style>
+        h2{
+            color:blue;
+             
+        }
+       
+     </style>
+
+    <script>
+        const mname="RRR";
+        const starring=["Ramcharan,Jr NTR"];
+        const language="Telugu";
+        const rating={
+            adhi:9.8,
+            mukesh:5.6,
+            ravi:9
+        };
+        const movieDiv=document.getElementById("movie");
+        movieDiv.innerHTML=`
+        <h2>${mname}</h2>
+        <p style="color:red;">Starring:${starring.join(",")}</p>
+        <p>Language:${language}</p>
+        <p>Ratings:</p>
+        <ul>
+            <li>adhi:${rating.adhi}</li>
+            <li>mukesh:${rating.mukesh}</li>
+            <li>ravi:${rating.ravi}</li>`;
+                </script> -->
+  
+<!-- 
+            <h4>Your TicketsDetails:</h4>  <br>   
+
+
+         <script>
+           let x =Number(prompt("Enter no.of Tikets:"));
+           document.write("Total no.of seats Books:"+x);
+           document.write("<br>");
+           document.write("Cost of "+x+"tickets:"+(150*x));
+           document.write("<br>");
+           document.write("Festival Season Discount:10%");
+           document.write("<br>");
+           document.write("Total Cost after Discount is:"+((x*150)-(x*(10/100)*150)));
+
+         </script> -->
+
+
+
+
+       <!-- Experiment3(e)   Write a javascript code to book movie ticketts online calculate the total price based on the 3 c0mditions
+      
+      (a) If seats to be booked ara not more then 2,the cost prr ticket remains Rs.150  (b) If seats are 6 or more ,Booking is not allowed-->
+
+
+
+      
+        <!-- <h1>Movie Tickets Booking</h1>
+        <form>
+          <label for="no_of_seats">Number of Seats:</label>
+          <input type="number" id="no_of_seats" min="1" max="5"><br><br>
+
+           <button type="button" onclick="calculatePrice()">Click</button><br><br>
+
+           <label for="totalprice">Total Price:</label>
+           <input type="number" id="totalprice" readonly><br><br>
+
+        </form>
+        <script>
+            function calculatePrice(){
+              const costPerTicket=150;
+              let num_seats=parseInt(document.getElementById("no_of_seats").value);
+              let totalprice=0;
+              if(num_seats<=2){
+                totalprice=calculateCost(num_seats,costPerTicket);
+                
+              }
+              else if(num_seats>=6){
+                alert("Sorry,booking is not allowed for  more than 5 seats.");
+              }
+              else{
+                totalprice=calculateCost(num_seats,costPerTicket)*0.9;
+              }
+              document.getElementById("totalprice").value=totalprice;
+            }
+
+
+            function calculateCost(num_seats,costPerTicket){
+              return num_seats*costPerTicket;
+            }
+          
+        </script> -->
+
+
+
+        <!-----Employee Information -->
+
+          <!-- <h2>Employee Information</h2>
+          <div id="emp"></div>
+
+          <script>
+            //person class
+            class person{
+              constructor(name,age){
+                this.name=name;
+                this.age=age;
+
+              }
+            }
+            
+              //Employee class Extending person
+              class Employee extends person{
+                constructor(name,age,role){
+                  super(name,age);
+                  this.role=role;
+                }
+              }
+            
+              let ob=new Employee("John",35,"Manger");
+            
+
+              document.getElementById('emp').innerHTML=
+
+                `Name:${ob.name}<br>
+                Age:${ob.age}<br>
+                Role:${ob.role}`;
+
+          
+          </script> -->
+
+
+
+
+
+<!-----Ice cream Script-->
+
+
+  <!-- <style>
+    body{
+    background-color:rgb(1, 30, 30);
+  }
+  h1{
+    font-size: 30px;
+    text-align:center;
+    color:blue;
+  }
+  .cone{
+    margin:50px auto;
+    width:200px;
+    height:300px;
+    background-color: white;
+    border-radius: 50%/100%;
+    position:relative;
+    overflow: hidden;
+    border:5px solid#9b1e8f;
+  }
+  .ice-cream{
+    width:180px;
+    height:180px;
+    background-color: #9b1e8f;
+    position:absolute;
+    bottom:-90px;
+    left:10px;
+    border-radius:50%;
+    box-shadow: inset 0 5px 5px rgba(0,0,0,0.6);
+  }
+  .empty:after{
+    content:"";
+    width:160px;
+    height:160px;
+    background-color: azure;
+    position:absolute;
+    top:-100px;
+    left:20px;
+    border-radius:50%;
+    box-shadow:0 0 0 0 5px blue ;
+  }
+  </style>
+
+
+  <div class="cone empty"></div>
+  <h1> Click the Cone Fill it up</h1>
+  <script>
+    let isFilled=false;
+    const cone=document.querySelector(".cone");
+    cone.addEventListener("click",()=>{
+      isFilled=!isFilled;
+      cone.classList.toggle("empty");
+      if(isFilled){
+        cone.style.backgroundColor="#f90";
+        document.querySelector("h1").textContent="Enjoy your Ice Cream!";
+        document.querySelector("body").style.backgroundColor="lightblue";
+
+       }
+      else {
+        cone.style.backgroundColor="white";
+        document.querySelector("h1").textContent=
+        "Click the cone to fill it up";
+        document.querySelector("body").style.backgroundColor="#f2f2f2";
+      }
+      
+    });
+  </script> -->
+
+
+
+
+
+
+<!---Login Page Validation-->
+
+
+<title>Login Page Validation</title>
+<h1>Login Page</h1>
+<form>
+  <label for="username">UserName:</label>
+  <input type="text" id="username" required><br><br>
+  <label for="password">Possword:</label>
+  <input type="password" id="password" required><br><br>
+  <button typ="button" onclick="validateLogin">Login</button>
+</form>
+
+
+<script>
+  class User{
+
+    constructor(username,password){
+      this.username=username;
+      this.password=password;
+    }
+    
+    
+    validate(){
+      if(this.username===this.password){
+        return <a href="home.html">home</a>;
+      }
+      else{
+        return "Invalid UserName or Password";
+      }
+    
+    }
+  
+  }
+ function validateLogin(){
+  const username=document.getElementById("username").value;
+  const password=document.getElementById("password").value;
+  const ob =new User(username,password);
+  //const validationMsg=ob.validate();
+  alert(ob.validate());
+
+
+ }
+  
+</script>
+
+</body>
+</html>
+
+
+
